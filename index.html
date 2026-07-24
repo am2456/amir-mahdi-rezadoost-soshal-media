@@ -6,9 +6,63 @@
         <link rel="icon" href="im/44f9d863-2bea-40f8-83c0-fb4328714457.png" type="image/x-icon">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/bootstrap.bundle.min.js"></script>
         <title>AMR Soshal Media</title>
     </head>
     <body>
+        <header class="header">
+            <div class="container">
+                <h1 id="page-title">AMR Soshal Media</h1>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link home" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link about" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact" href="contact.html">Contact</a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </header>
+        <br>
+        <br>
+        <main class="main">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="im/44f9d863-2bea-40f8-83c0-fb4328714457.png" alt="AMR Soshal Media" class="im-logo">
+                </a>
+            </div>
+            <br>
+            <div class="layout">
+                <label for="user-name" class="user">user name:</label><br>
+                <input type="text" id="user-name" class="user-input" placeholder="Enter your name..."><br>
+                <label for="user-email" class="user">user email:</label><br>
+                <input type="email" id="user-email" class="user-input" placeholder="Enter your email..."><br>
+                <label for="user-message" class="user">user message:</label><br>
+                <textarea id="user-message" class="user-input" placeholder="Enter your message..."></textarea><br>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Close</button>
+                <a class="btn btn-primary" href="#" role="button">Login</a>
+            </div><br>
+            <div class="icon" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-title="Site Rules" data-bs-content="Site rules are important to maintain a safe and respectful environment for all users. Please read and follow the rules to ensure a positive experience for everyone.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                </svg>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container" id="footer-container">
+                <p>&copy; 2026 AMR Soshal Media. All rights reserved.</p>
+            </div>
+        </footer>
     </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el));
+    </script>
 </html>
